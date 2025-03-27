@@ -1,7 +1,12 @@
 # DiagnosticTools
-
  <div align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select the source code version to download Qt6 or Qt5. The plugin has been tested on Linux. My project has not been tested on MacOS and Windows, but the code contains everything needed to build for these operating systems.<br>
+ </div>
+ 
+ ![qtcreator9](https://github.com/user-attachments/assets/77e874e0-4e23-4d66-9632-fd5fbf99b04c)
+ ![qtcreator16](https://github.com/user-attachments/assets/f5fb3519-10c7-4c5d-b1cc-88ca71f5b8d9)
+
+ <div align="justify">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To create a Qt Creator IDE plugin, you must first download the required library "Qt Creator (version number) Plugin Development". This library is not installed by default in the Linux repository, and if you installed the Qt Creator IDE from the Linux repository, then when you start building the starter plugin and any other, you will get an error. To solve this problem, it is best to download the Qt Creator IDE separately with the "Qt Creator Plugin Development" library already installed. This will also allow you to follow the recommendations from the Qt Creator website. To do this, you can download the offline installer for your version https://download.qt.io/, or download the Qt Creator IDE from the online installer, including the required library of tools "Qt Creator Plugin Development" on the side.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You must make sure that you are using the same version of the QT build that you used to create the plugin. Due to binary compatibility rules and compatibility with the QT build source, the QT Creator plugin wizard creates a plugin that can only work with the same version of the QT build with which it was created.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Make sure that your Qt builder has all the necessary tools (modules) for building such as sudo apt install qml6-module-* and others. It is best to use the Qt Creator builder, which was built from source code and added to the Qt Creator IDE.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Very important. Correct the CmakeLists.txt file, you need to specify the installation directory of your Qt Creator IDE with the "Qt Creator (version number) Plugin Development" tool library.
 
 <blockquote>
