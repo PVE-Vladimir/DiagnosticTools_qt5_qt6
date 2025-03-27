@@ -51,12 +51,14 @@ using namespace Diagnostictools::Internal;
 
 namespace Diagnostictools {
 namespace Internal {
+
 //Отключение отладочной информации; Disabling debug information
 void customMessageHandler(QtMsgType type, const QMessageLogContext &context, const QString &msg) {
     Q_UNUSED(type);
     Q_UNUSED(context);
     Q_UNUSED(msg);
 }
+
 
 DataVisualiser::DataVisualiser(DataQueryEngine *dataQueryEngine, QWidget *parent) :
     QWidget(parent),
