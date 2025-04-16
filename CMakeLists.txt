@@ -41,8 +41,8 @@ add_qtc_plugin(Diagnostictools
     QtCreator::ExtensionSystem
     QtCreator::Utils
   SOURCES
-    .github/workflows/build_cmake.yml
-    .github/workflows/README.md
+    #.github/workflows/build_cmake.yml
+    #.github/workflows/README.md
     README.md
     diagnostictools.h
     diagnostictools_global.h
